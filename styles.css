@@ -21,4 +21,8 @@ li {
   width: 50%;
 }
 
+footer > p{
+  text-align: left;
+  font-size: small;
+}
 }
