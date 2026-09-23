@@ -1,0 +1,24 @@
+body {
+    background-color: #f3f9ff;
+p {
+  text-align: center;
+  color: rgb(98, 108, 122);
+}
+
+h1 {
+  text-align: center;
+  color: rgb(16, 50, 93);
+}
+
+li {
+  color: rgb(19, 56, 104);
+}
+
+.image1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+}
