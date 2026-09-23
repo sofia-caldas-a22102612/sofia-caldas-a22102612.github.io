@@ -39,4 +39,8 @@ footer > p{
   text-align: left;
   font-size: small;
 }
+
+nav a {
+  display: grid;
+}
 }
