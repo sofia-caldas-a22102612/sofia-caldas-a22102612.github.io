@@ -17,10 +17,9 @@ ul {
 
 li {
   background-color: rgb(2, 48, 116);
-  background-position: 20%;
   color: rgb(169, 220, 244);
-  margin: 2px 0;
-  padding: 12px 12px;
+  margin: 2px;
+  padding: 12px 90px;
   text-align: left;     /* items aligned with each other */
   list-style-type: circle;
   list-style-position: inside;
