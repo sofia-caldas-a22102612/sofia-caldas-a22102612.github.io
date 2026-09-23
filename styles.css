@@ -10,9 +10,23 @@ h1 {
   color: rgb(16, 50, 93);
 }
 
-li {
-  color: rgb(19, 56, 104);
+ul {
+  text-align: center;
+  color: rgb(16, 50, 93);
 }
+
+li {
+  background-color: rgb(2, 48, 116);
+  background-position: 20%;
+  color: rgb(169, 220, 244);
+  margin: 2px 0;
+  padding: 12px 12px;
+  text-align: left;     /* items aligned with each other */
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+
 
 .image1 {
   display: block;
