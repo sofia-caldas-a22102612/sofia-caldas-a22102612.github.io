@@ -1,111 +1,120 @@
-
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
 }
 
 body {
-    background-color: rgba(252, 243, 225, 0.481);
-    margin: 0 20;
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
+background-color: rgba(252, 243, 225, 0.481);
+margin: 0 20;
+min-height: 100%;
+display: grid;
+grid-template-rows: auto auto 1fr auto;
 }
 
 header {
-  background-image: url("images/background page.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 20px;;
+background-image: url("images/background page.jpg");
+background-size: cover;
+background-position: center;
+padding: 20px;;
 }
 
 
 h1 {
-    color: white;
-     text-shadow:
-        -1px -1px 0 black,
-         1px -1px 0 black,
-        -1px  1px 0 black,
-         1px  1px 0 black;
-         padding: 20px;
+color: white;
+text-shadow:
+-1px -1px 0 black,
+1px -1px 0 black,
+-1px  1px 0 black,
+1px  1px 0 black;
+padding: 20px;
 }
 
 nav {
-    display: flex;
-    gap: 10px;
-    margin: 20px 0;
+display: flex;
+gap: 10px;
+margin: 20px 0;
 }
 
 nav a {
-    padding: 10px 20px;
-    background-color: #570202;
-    color: white;
-    text-decoration:solid;
-    border-radius: 6px;
+padding: 10px 20px;
+background-color: #570202;
+color: white;
+text-decoration:solid;
+border-radius: 6px;
 }
 
 nav a:hover {
-    background-color: #0b3356;
+background-color: #0b3356;
 }
 
 p {
-    padding: 10px 20px;
-    flex: 1;
+padding: 10px 20px;
+flex: 1;
 }
 
 h2 {
-    color: #2f1a09;
-    flex: 1;
-    padding: 20px;
+color: #2f1a09;
+flex: 1;
+padding: 20px;
 }
 
 .cartaxoMapa {
-    width: 30%;
-    height: auto;
-    padding: 20px;
+width: 30%;
+height: auto;
+padding: 20px;
 }
 
 .imgaju {
-    width: 40%;
-    height: auto;
-    flex: 1;
-    padding: 20px;
+width: 40%;
+height: auto;
+flex: 1;
+padding: 20px;
 }
 
 .mercado {
-    width: 100%;
-    height: auto;
-    flex: 1;
-    padding: 20px;
+width: 100%;
+height: auto;
+flex: 1;
+padding: 20px;
 }
 
 .imgVinha {
-    width: 100%;
-    height: auto;
-    flex: 1;
-    padding: 20px;
+width: 100%;
+height: auto;
+flex: 1;
+padding: 20px;
 }
 
 .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
 }
 
 
 
 footer {
-    background-image:
-       url("images/background page.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 5px 0;
-    color: white;
-    text-shadow:
-        -1px -1px 0 black,
-         1px -1px 0 black,
-        -1px  1px 0 black,
-         1px  1px 0 black;
+background-image:
+url("images/background page.jpg");
+background-size: cover;
+background-position: center;
+padding: 5px 0;
+color: white;
+text-shadow:
+-1px -1px 0 black,
+1px -1px 0 black,
+-1px  1px 0 black,
+1px  1px 0 black;
 }
 
+.fotografias {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 10px;
+}
+.fotografias img {
+width: 150px;
+border-radius: 20px;
+}
