@@ -118,3 +118,50 @@ gap: 10px;
 width: 150px;
 border-radius: 20px;
 }
+
+/* Tabela */
+.tabela {
+border-collapse: collapse;
+margin: 20px;
+background-color: white;
+}
+
+.tabela th,
+.tabela td {
+border: 1px solid #570202;
+padding: 10px 15px;
+text-align: left;
+}
+
+.tabela th {
+background-color: #570202;
+color: white;
+}
+
+.tabela td {
+color: #2f1a09;
+}
+
+/* Título da tabela (primeira linha) */
+.tabela tr:first-child th {
+background-color: #0b3356;
+text-align: center;
+font-size: 1.2em;
+}
+
+/* Curiosidades */
+.curiosidades {
+padding: 10px 20px 20px 50px;
+}
+
+.curiosidades li {
+margin-bottom: 8px;
+color: #570202;
+}
+
+h3 {
+padding: 10px 20px;
+color: #2f1a09;
+}
+
+/* Tabela */
