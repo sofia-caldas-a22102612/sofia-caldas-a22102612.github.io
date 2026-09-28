@@ -13,10 +13,19 @@ grid-template-rows: auto auto 1fr auto;
 }
 
 header {
-background-image: url("images/background page.jpg");
+/*background-image: url("images/background page.jpg");
 background-size: cover;
-background-position: center;
-padding: 20px;;
+background-position: center;*/
+   background: linear-gradient(rgba(81, 12, 28, 0.9), rgba(38, 7, 14, 0.89));
+  padding: 12px 20px;
+  text-align: left;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
 }
 
 
@@ -37,11 +46,15 @@ margin: 20px 0;
 }
 
 nav a {
-padding: 10px 20px;
-background-color: #570202;
+    background: linear-gradient(rgba(81, 12, 28, 0.9), rgba(38, 7, 14, 0.89));
+padding: 20px 20px;
+/*background-color: #570202;*/
 color: white;
 text-decoration:solid;
 border-radius: 6px;
+box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.3),
+            inset -3px -3px 6px rgba(0, 0, 0, 0.7);
+            width: 100%;
 }
 
 nav a:hover {
@@ -135,7 +148,7 @@ text-align: left;
 
 .tabela th {
 background-color: #570202;
-color: white;
+color: rgb(239, 239, 239);
 }
 
 .tabela td {
@@ -144,7 +157,7 @@ color: #2f1a09;
 
 /* Título da tabela (primeira linha) */
 .tabela tr:first-child th {
-background-color: #0b3356;
+background-color: #0b3356a8;
 text-align: center;
 font-size: 1.2em;
 }
@@ -164,4 +177,12 @@ padding: 10px 20px;
 color: #2f1a09;
 }
 
+.text {
+padding: 10px 20px;
+color: #2f1a09;
+background-color: #f3e3cc96;
+border-radius: 8px;
+box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.3),
+            inset -3px -3px 6px rgba(255, 255, 255, 0.7);
+}
 /* Tabela */
