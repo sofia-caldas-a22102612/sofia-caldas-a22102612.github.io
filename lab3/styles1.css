@@ -1,0 +1,419 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*section sobre*/
+#sobre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 32px;
+  background-color: #f4ede4;
+}
+
+#sobre h2 {
+  width: 100%;
+  color: #5a1426;
+}
+
+.card {
+  width: 300px;
+  padding: 32px 30px;
+  background-color: white;
+  border-left: 5px solid #5a1426;
+  border-radius: 4px 14px 14px 4px;
+}
+
+.numero {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 3.5em;
+  color: #d4a13a;
+}
+
+.card h3 {
+  font-size: 1.35em;
+  color: #5a1426;
+  margin: 10px 0 12px;
+}
+
+.card p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.card a {
+  color: #5a1426;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #d4a13a;
+  padding-bottom: 2px;
+}
+
+.card a:hover {
+  color: #2b0a14;
+}
+
+/* max image size */
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Karla", Arial, sans-serif;
+  color: #2b0a14;
+  background-color: #f4ede4;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* header, main, footer */
+}
+
+h2 {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-weight: normal;
+  font-size: 2.8em;
+  color: #5a1426;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.35em;
+  color: #5a1426;
+  margin: 30px 0 12px;
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 1em;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #5a1426;
+}
+
+/* logo on the left of menu bar */
+header h1 {
+  flex-shrink: 0;
+  height: 50px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  background-color: #5a1426;
+}
+
+.header-logo {
+  display: block;
+  height: 42px;
+}
+
+/* arrow menu */
+header nav {
+  flex: 1;
+  display: flex;
+}
+
+header nav a {
+  flex: 1;
+  height: 50px; /* same height as logo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5a1426;
+  color: #f4ede4;
+  font-size: 1.05em;
+  text-decoration: none;
+  padding: 0 26px 0 32px;
+  margin-left: -12px;
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%, 14px 50%);
+}
+
+header nav a:first-child {
+  margin-left: 0;
+  padding-left: 20px;
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%);
+}
+
+header nav a:last-child {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 14px 50%);
+}
+
+header nav a:hover {
+  background-color: #7a1f35;
+}
+
+header nav a.ativo {
+  background-color: #d4a13a;
+  color: #2b0a14;
+  font-weight: bold;
+}
+
+/* banner */
+.banner {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* main banner maior */
+.hero-grande .banner {
+  height: 70vh;
+}
+
+/* Content */
+
+main {
+  padding: 60px 8%;
+}
+
+iframe {
+  max-width: 100%;
+  margin: 10px 0 20px;
+  border-radius: 14px;
+}
+
+.mercado,
+.imgVinha {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 14px;
+}
+
+.cartaxoMapa {
+  width: 30%;
+  margin-top: 20px;
+  border-radius: 14px;
+}
+
+/* links âncora da página Multimédia */
+.ancoras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.ancoras a {
+  padding: 8px 20px;
+  border: 2px solid #5a1426;
+  border-radius: 40px;
+  color: #5a1426;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ancoras a:hover {
+  background-color: #5a1426;
+  color: #f4ede4;
+}
+
+/* Tabela */
+.tabela {
+  border-collapse: collapse;
+  margin: 10px 0 20px;
+  background-color: white;
+}
+
+.tabela th,
+.tabela td {
+  border: 1px solid #5a1426;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.tabela th {
+  background-color: #5a1426;
+  color: #f4ede4;
+}
+
+.tabela tr:first-child th {
+  background-color: #2b0a14;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* Curiosidades */
+.text {
+  margin: 30px 0;
+  padding: 10px 30px 20px;
+  background-color: white;
+  border-left: 5px solid #5a1426;
+  border-radius: 4px 14px 14px 4px;
+}
+
+.curiosidades {
+  padding-left: 25px;
+}
+
+.curiosidades li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Página inicial: texto e imagem lado a lado */
+
+.intro {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 90px 8%;
+}
+
+.intro h2 {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.intro p {
+  font-size: 1.1em;
+  line-height: 1.75;
+}
+
+.intro .mercado {
+  margin: 0;
+}
+
+/* Footer */
+
+footer {
+  background-color: #2b0a14;
+  color: #f4ede4;
+  text-align: center;
+  padding: 18px;
+  font-size: 0.9em;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* hero */
+.hero {
+  position: relative;
+  height: 100vh;
+background-image:
+    linear-gradient(90deg, rgb(43, 10, 20), rgba(71, 16, 33, 0.944), rgba(125, 5, 41, 0.963)),
+    url("images/painelCartaxo.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #f4ede4;
+}
+
+/* texto posicionado sobre a imagem */
+.hero-texto {
+  position: absolute;
+  top: 32%;
+  left: 8%;
+  right: 8%;
+  max-width: 640px;
+}
+
+/* pequeno */
+.regiao {
+  color: #d4a13a;
+  margin-bottom: 14px;
+}
+
+/* grande */
+.hero-texto h2 {
+  font-size: 4.2em;
+  line-height: 1.05;
+  color: #f4ede4;
+  margin-bottom: 22px;
+}
+
+/* médio */
+.lema {
+  font-size: 1.3em;
+  line-height: 1.5;
+  max-width: 480px;
+}
+
+/* call to action */
+.cta {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 16px 38px;
+  background-color: #d4a13a;
+  color: #2b0a14;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+.cta:hover {
+  background-color: #e6b858;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+  header h1 {
+    width: 100px;
+    height: 36px;
+  }
+
+  .header-logo {
+    height: 30px;
+  }
+
+  header nav a {
+    height: 36px;
+    padding: 0 14px 0 22px;
+  }
+
+  header nav a:first-child {
+    padding-left: 10px;
+  }
+
+  header nav a span {
+    display: none;
+  }
+
+  .icone {
+    display: block;
+  }
+
+  main {
+    padding: 40px 6%;
+  }
+
+  .cartaxoMapa {
+    width: 100%;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    padding: 70px 6%;
+  }
+
+  .hero-texto {
+    top: 25%;
+    left: 6%;
+    right: 6%;
+  }
+
+  .hero-texto h2 {
+    font-size: 2.6em;
+  }
+
+  .lema {
+    font-size: 1.1em;
+  }
+
+  .icone {
+  display: block;
+  font-size: 1.3em;
+}
+}

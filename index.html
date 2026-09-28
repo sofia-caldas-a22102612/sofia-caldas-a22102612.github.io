@@ -2,44 +2,94 @@
 <html lang="pt">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sofia Caldas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Primeira Página Web!</h1>
-    </header>
+    <section id="inicio" class="hero">
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#diw">Interfaces Web</a></li>
+        </ul>
+      </nav>
 
-    <main>
-      <p>Eis a minha primeira página Web!</p>
-      <p>
-        Na Unidade Curricular de
-        <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232">
-          Desenvolvimento de Interfaces Web
-        </a>
-        abordaremos as seguintes tecnologias Web &#127760;:
-      </p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React e Next.js</li>
-      </ul>
-      <p>Iremos criar soluções criativas!</p>
-      <img
-        src="images/diw.svg"
-        alt="Desenvolvimento de Interfaces Web"
-        class="image1"
-      />
-    </main>
+      <header class="hero-texto">
+        <p class="autora">Sofia Caldas, Engenharia Informática</p>
+        <h1>Cada página começa com uma linha de código.</h1>
+        <p class="lema">
+          Os meus laboratórios e exercícios de Interfaces Web, num só lugar.
+        </p>
+        <a href="#projetos" class="cta">Ver projetos</a>
+      </header>
+    </section>
 
-    <nav>
-      <a href="lab1/index.html">Lab1</a>
-      <a href="lab2/index.html">Lab2</a>
-    </nav>
+    <section id="projetos">
+      <h2>Projetos</h2>
+
+      <article class="card">
+        <span class="numero">1</span>
+        <h3>Lab 1</h3>
+        <p>
+          Primeiros passos em HTML: estrutura de uma página, textos e links.
+        </p>
+        <a href="lab1/index.html">Abrir lab 1</a>
+      </article>
+
+      <article class="card">
+        <span class="numero">2</span>
+        <h3>A minha Cidade</h3>
+        <p>
+          Site sobre o Cartaxo, com tabelas, mapa, galeria de fotografias, vídeo
+          e poesia.
+        </p>
+        <a href="lab2/index.html">Abrir lab 2</a>
+      </article>
+
+      <article class="card">
+        <span class="numero">3</span>
+        <h3>Lab 3</h3>
+        <p>Descrição curta do que fez neste laboratório.</p>
+        <a href="lab3/index.html">Abrir lab 3</a>
+      </article>
+    </section>
+
+    <section id="diw">
+      <h2>Desenvolvimento de Interfaces Web</h2>
+
+      <article class="diw-texto">
+        <p>Eis a minha primeira página Web!</p>
+        <p>
+          Na Unidade Curricular de
+          <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232"
+            >Desenvolvimento de Interfaces Web</a
+          >
+          abordaremos as seguintes tecnologias Web &#127760;:
+        </p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React e Next.js</li>
+        </ul>
+        <p>Iremos criar soluções criativas!</p>
+      </article>
+
+      <figure>
+        <img src="images/diw.svg" alt="Desenvolvimento de Interfaces Web" />
+      </figure>
+    </section>
 
     <footer>
-      <p>Universidade Lusófona © 2025</p>
+      <p>Universidade Lusófona © 2026</p>
     </footer>
   </body>
 </html>
