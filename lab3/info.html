@@ -19,7 +19,7 @@
       <h1>
         <img src="images/cartaxoLogo.png" alt="Cartaxo" class="header-logo" />
       </h1>
-      <nav>
+      <nav aria-label="Menu principal">
         <a href="index.html" aria-label="Home">
           <i class="fa-solid fa-house icone" aria-hidden="true"></i>
           <span>Home</span>
@@ -55,46 +55,50 @@
       <section class="g-acessos">
         <h3>Acessos</h3>
         <table class="tabela">
-          <tr>
-            <th colspan="3">Acessos ao Cartaxo</th>
-          </tr>
-          <tr>
-            <th>Tipo</th>
-            <th>Via / Estação</th>
-            <th>Descrição</th>
-          </tr>
-          <tr>
-            <th rowspan="3">Rodoviário</th>
-            <td>A1</td>
-            <td>Nó de acesso direto à autoestrada</td>
-          </tr>
-          <tr>
-            <td>EN 365-2</td>
-            <td>Ligação ao nó da A1 de Aveiras de Cima</td>
-          </tr>
-          <tr>
-            <td>EN3</td>
-            <td>Liga o Carregado a Santarém</td>
-          </tr>
-          <tr>
-            <th rowspan="3">Ferroviário</th>
-            <td>Estação do Setil</td>
-            <td>A mais importante, na Linha do Norte</td>
-          </tr>
-          <tr>
-            <td>Estação de Santana</td>
-            <td>Mobilidade regional</td>
-          </tr>
-          <tr>
-            <td>Estação do Reguengo</td>
-            <td>Mobilidade regional</td>
-          </tr>
-          <tr>
-            <th>Distâncias</th>
-            <td colspan="2">
-              Lisboa: cerca de 50 km · Santarém: cerca de 15 km
-            </td>
-          </tr>
+          <thead>
+            <tr>
+              <th colspan="3" scope="colgroup">Acessos ao Cartaxo</th>
+            </tr>
+            <tr>
+              <th scope="col">Tipo</th>
+              <th scope="col">Via / Estação</th>
+              <th scope="col">Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="3" scope="rowgroup">Rodoviário</th>
+              <td>A1</td>
+              <td>Nó de acesso direto à autoestrada</td>
+            </tr>
+            <tr>
+              <td>EN 365-2</td>
+              <td>Ligação ao nó da A1 de Aveiras de Cima</td>
+            </tr>
+            <tr>
+              <td>EN3</td>
+              <td>Liga o Carregado a Santarém</td>
+            </tr>
+            <tr>
+              <th rowspan="3" scope="rowgroup">Ferroviário</th>
+              <td>Estação do Setil</td>
+              <td>A mais importante, na Linha do Norte</td>
+            </tr>
+            <tr>
+              <td>Estação de Santana</td>
+              <td>Mobilidade regional</td>
+            </tr>
+            <tr>
+              <td>Estação do Reguengo</td>
+              <td>Mobilidade regional</td>
+            </tr>
+            <tr>
+              <th scope="row">Distâncias</th>
+              <td colspan="2">
+                Lisboa: cerca de 50 km · Santarém: cerca de 15 km
+              </td>
+            </tr>
+          </tbody>
         </table>
       </section>
 
