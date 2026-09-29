@@ -5,71 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cidade</title>
     <link
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="styles1.css" />
   </head>
   <body>
-
-      <header>
-        <h1>
-          <img src="images/cartaxoLogo.png" alt="Cartaxo" class="header-logo" />
-        </h1>
-        <nav>
-          <a href="index.html">
-            <i class="fa-solid fa-house icone"></i>
-            <span>Home</span>
-          </a>
-          <a href="local.html" class="ativo">
-            <i class="fa-solid fa-location-dot icone"></i>
-            <span>Localização</span>
-          </a>
-          <a href="multimedia.html">
-            <i class="fa-solid fa-camera icone"></i>
-            <span>Multimédia</span>
-          </a>
-          <a href="info.html">
-            <i class="fa-solid fa-circle-info icone"></i>
-            <span>Informação</span>
-          </a>
-        </nav>
-      </header>
-
-
-    <img src="images/background page.jpg" alt="Vinha" class="banner" />
+    <header>
+      <h1>
+        <img src="images/cartaxoLogo.png" alt="Cartaxo" class="header-logo" />
+      </h1>
+      <nav>
+        <a href="index.html" aria-label="Home">
+          <i class="fa-solid fa-house icone" aria-hidden="true"></i>
+          <span>Home</span>
+        </a>
+        <a href="local.html" class="ativo" aria-label="Localização">
+          <i class="fa-solid fa-location-dot icone" aria-hidden="true"></i>
+          <span>Localização</span>
+        </a>
+        <a href="multimedia.html" aria-label="Multimédia">
+          <i class="fa-solid fa-camera icone" aria-hidden="true"></i>
+          <span>Multimédia</span>
+        </a>
+        <a href="info.html" aria-label="Informação">
+          <i class="fa-solid fa-circle-info icone" aria-hidden="true"></i>
+          <span>Informação</span>
+        </a>
+      </nav>
+      <img
+        src="images/background page.jpg"
+        alt="Vinhas do Cartaxo"
+        class="banner"
+      />
+    </header>
 
     <main>
       <h2>Localização e Como Chegar</h2>
-      <p>
-        Situado a cerca de 50 quilómetros de Lisboa - cujo aeroporto
-        internacional é a ligação aérea mais próxima -, e a 15 quilómetros da
-        capital de distrito (Santarém), o Cartaxo está bem servido por vias
-        rodoviárias e ferroviárias. O nó direto de acesso à A1, a variante à EN
-        365-2 – de ligação ao nó da A1 de Aveiras de Cima –, bem como a EN3, que
-        atravessa o concelho fazendo a ligação entre o Carregado e Santarém, são
-        as suas principais vias de acesso, que permitem ao concelho afirmar a
-        sua centralidade na região e no país. O concelho é também servido pela
-        Linha Ferroviária do Norte, sendo a estação do Setil a mais importante,
-        a qual desde sempre fez parte da rede ferroviária nacional de ligação
-        entre o norte e o sul do país. As estações ferroviárias de Santana e do
-        Reguengo são também ponto de partida e de chegada de comboios,
-        valorizando a mobilidade regional.
-      </p>
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d46958.3683571691!2d-8.8018623287457!3d39.1559386288293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spt!4v1790247365304!5m2!1sen!2spt"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"
-      >
-      </iframe
-      >"
+      <!-- text beside the map on PC, text on top of the map on phone -->
+      <section class="side-to-side">
+        <p>
+          Situado a cerca de 50 quilómetros de Lisboa - cujo aeroporto
+          internacional é a ligação aérea mais próxima -, e a 15 quilómetros da
+          capital de distrito (Santarém), o Cartaxo está bem servido por vias
+          rodoviárias e ferroviárias. O nó direto de acesso à A1, a variante à
+          EN 365-2 – de ligação ao nó da A1 de Aveiras de Cima –, bem como a
+          EN3, que atravessa o concelho fazendo a ligação entre o Carregado e
+          Santarém, são as suas principais vias de acesso, que permitem ao
+          concelho afirmar a sua centralidade na região e no país. O concelho é
+          também servido pela Linha Ferroviária do Norte, sendo a estação do
+          Setil a mais importante, a qual desde sempre fez parte da rede
+          ferroviária nacional de ligação entre o norte e o sul do país. As
+          estações ferroviárias de Santana e do Reguengo são também ponto de
+          partida e de chegada de comboios, valorizando a mobilidade regional.
+        </p>
 
-      <img src="images/cartaxoMapa.png" alt="Freguesias" class="cartaxoMapa" />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d46958.3683571691!2d-8.8018623287457!3d39.1559386288293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spt!4v1790247365304!5m2!1sen!2spt"
+          title="Mapa do Cartaxo"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </section>
     </main>
 
     <footer>

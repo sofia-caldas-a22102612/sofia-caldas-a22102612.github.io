@@ -5,52 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cidade</title>
     <link
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="styles1.css" />
   </head>
-
   <body>
-
+    <!-- Hero -->
+    <section id="inicio" class="hero hero-multimedia">
       <header>
         <h1>
           <img src="images/cartaxoLogo.png" alt="Cartaxo" class="header-logo" />
         </h1>
         <nav>
-          <a href="index.html">
-            <i class="fa-solid fa-house icone"></i>
+          <a href="index.html" aria-label="Home">
+            <i class="fa-solid fa-house icone" aria-hidden="true"></i>
             <span>Home</span>
           </a>
-          <a href="local.html">
-            <i class="fa-solid fa-location-dot icone"></i>
+          <a href="local.html" aria-label="Localização">
+            <i class="fa-solid fa-location-dot icone" aria-hidden="true"></i>
             <span>Localização</span>
           </a>
-          <a href="multimedia.html" class="ativo">
-            <i class="fa-solid fa-camera icone"></i>
+          <a href="multimedia.html" class="ativo" aria-label="Multimédia">
+            <i class="fa-solid fa-camera icone" aria-hidden="true"></i>
             <span>Multimédia</span>
           </a>
-          <a href="info.html">
-            <i class="fa-solid fa-circle-info icone"></i>
+          <a href="info.html" aria-label="Informação">
+            <i class="fa-solid fa-circle-info icone" aria-hidden="true"></i>
             <span>Informação</span>
           </a>
         </nav>
       </header>
 
+      <article class="hero-texto">
+        <p class="regiao">Cartaxo, Capital do Vinho</p>
+        <h2>Multimédia</h2>
+        <p class="lema">Nesta página encontra conteúdos multimédia.</p>
+        <nav class="ancoras">
+          <a href="#fotografias">Fotografias</a>
+          <a href="#video">Vídeo</a>
+          <a href="#poesia">Poesia</a>
+        </nav>
+      </article>
+    </section>
 
-    <img src="images/cartaxoAzu.jpg" alt="Vinha" class="banner" />
-
-    <main>
-      <h2>Multimedia</h2>
-      <p>Nesta página encontra conteúdos multimédia.</p>
-
-      <nav class="ancoras">
-        <a href="#fotografias">Fotografias</a>
-        <a href="#video">Vídeo</a>
-        <a href="#poesia">Poesia</a>
-      </nav>
-
-      <section class="photos">
+    <main class="secoes">
+      <section class="section photos">
         <h3 id="fotografias">Fotografias</h3>
         <div class="fotografias">
           <img src="images/background page.jpg" alt="Vista da cidade" />
@@ -64,14 +68,11 @@
         </div>
       </section>
 
-      <section class="video">
+      <section class="section video">
         <h3 id="video">Vídeo</h3>
         <iframe
-          width="560"
-          height="315"
           src="https://www.youtube.com/embed/9--I6NggiQ0?si=wwssT022T-36bq2n"
-          title="YouTube video player"
-          frameborder="0"
+          title="Vídeo sobre o Cartaxo"
           allow="
             accelerometer;
             autoplay;
@@ -86,7 +87,7 @@
         ></iframe>
       </section>
 
-      <section class="poetry">
+      <section class="section poetry">
         <h3 id="poesia">Poesia</h3>
         <div class="poema">
           <p>Na margem do Tejo, entre a planície e o céu,</p>
@@ -98,6 +99,11 @@
           <p>Capital do vinho, de gente que trabalha,</p>
           <p>Terra ribatejana onde a alma não falha.</p>
         </div>
+      </section>
+
+      <section class="frase">
+        <img src="images/pixabayVines.jpg" alt="cat" />
+        <p class="frase-texto">Onde o Tejo corre entre vinhas.</p>
       </section>
     </main>
 

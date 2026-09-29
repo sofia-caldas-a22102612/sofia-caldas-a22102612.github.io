@@ -5,32 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cidade</title>
     <link
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="styles1.css" />
   </head>
   <body>
-    <section id="inicio" class="hero">
+    <section id="inicio" class="hero hero-inicio">
       <header>
         <h1>
           <img src="images/cartaxoLogo.png" alt="Cartaxo" class="header-logo" />
         </h1>
         <nav>
-          <a href="index.html" class="ativo">
-            <i class="fa-solid fa-house icone"></i>
+          <a href="index.html" class="ativo" aria-label="Home">
+            <i class="fa-solid fa-house icone" aria-hidden="true"></i>
             <span>Home</span>
           </a>
-          <a href="local.html">
-            <i class="fa-solid fa-location-dot icone"></i>
+          <a href="local.html" aria-label="Localização">
+            <i class="fa-solid fa-location-dot icone" aria-hidden="true"></i>
             <span>Localização</span>
           </a>
-          <a href="multimedia.html">
-            <i class="fa-solid fa-camera icone"></i>
+          <a href="multimedia.html" aria-label="Multimédia">
+            <i class="fa-solid fa-camera icone" aria-hidden="true"></i>
             <span>Multimédia</span>
           </a>
-          <a href="info.html">
-            <i class="fa-solid fa-circle-info icone"></i>
+          <a href="info.html" aria-label="Informação">
+            <i class="fa-solid fa-circle-info icone" aria-hidden="true"></i>
             <span>Informação</span>
           </a>
         </nav>
@@ -42,62 +46,62 @@
         <p class="lema">
           Entre a vinha, a lezíria e o Tejo, uma terra com séculos de tradição.
         </p>
-        <a href="#sobre" class="cta">Descobrir o Cartaxo</a>
+        <a href="#descobrir" class="cta">Descobrir o Cartaxo</a>
       </article>
     </section>
 
-    <main id="sobre" class="intro">
-      <h2>Cartaxo</h2>
+    <main class="secoes">
+      <section id="sobre" class="intro">
+        <h2>Cartaxo</h2>
 
-      <p>
-        Situado no coração do Ribatejo, o concelho do Cartaxo ocupa uma área de
-        cerca de 160 km2, sendo constituído por seis freguesias – União de
-        Freguesias do Cartaxo e Vale da Pinta, União de Freguesias de Ereira e
-        Lapa, Pontével, Valada, Vale da Pedra e Vila Chã de Ourique. O campo, o
-        bairro e a lezíria, com o rio aos pés, atribuem ao Cartaxo uma grande
-        riqueza paisagística. A cultura da vinha e a produção de vinho estiveram
-        desde sempre ligadas ao concelho, valendo-lhe o título de Capital do
-        Vinho.
-      </p>
-
-      <section id="sobre">
-      <h2>Descubrir o Cartaxo</h2>
-
-      <article class="card">
-        <span class="numero">1</span>
-        <h3>Localização</h3>
         <p>
-          Como chegar ao Cartaxo.
+          Situado no coração do Ribatejo, o concelho do Cartaxo ocupa uma área
+          de cerca de 160 km2, sendo constituído por seis freguesias – União de
+          Freguesias do Cartaxo e Vale da Pinta, União de Freguesias de Ereira e
+          Lapa, Pontével, Valada, Vale da Pedra e Vila Chã de Ourique. O campo,
+          o bairro e a lezíria, com o rio aos pés, atribuem ao Cartaxo uma
+          grande riqueza paisagística. A cultura da vinha e a produção de vinho
+          estiveram desde sempre ligadas ao concelho, valendo-lhe o título de
+          Capital do Vinho.
         </p>
-        <a href="local.html">Localização</a>
-      </article>
 
-      <article class="card">
-        <span class="numero">2</span>
-        <h3>Multimédia</h3>
-        <p>
-          Fotos, videos e muito mais.
-        </p>
-        <a href="multimedia.html">Multimédia</a>
-      </article>
+        <img
+          src="images/mercado.jpg"
+          alt="Mercado do Cartaxo"
+          class="mercado"
+        />
+      </section>
 
-      <article class="card">
-        <span class="numero">3</span>
-        <h3>Informação</h3>
-        <p>Mais sobre o Cartaxo</p>
-        <a href="info.html">Informação</a>
-      </article>
-    </section>
+      <section id="descobrir" class="section photos">
+        <h2>Descobrir o Cartaxo</h2>
 
-      <img src="images/mercado.jpg" alt="Mercado do Cartaxo" class="mercado" />
+        <section class="cards">
+          <article class="card">
+            <span class="numero">1</span>
+            <h3>Localização</h3>
+            <p>Como chegar ao Cartaxo.</p>
+            <a href="local.html">Ver localização</a>
+          </article>
+
+          <article class="card">
+            <span class="numero">2</span>
+            <h3>Multimédia</h3>
+            <p>Fotografias, vídeo e poesia.</p>
+            <a href="multimedia.html">Ver multimédia</a>
+          </article>
+
+          <article class="card">
+            <span class="numero">3</span>
+            <h3>Informação</h3>
+            <p>Acessos e curiosidades sobre o Cartaxo.</p>
+            <a href="info.html">Ver informação</a>
+          </article>
+        </section>
+      </section>
     </main>
-
-
 
     <footer>
       <p>DIW 2026</p>
     </footer>
-
   </body>
-
 </html>

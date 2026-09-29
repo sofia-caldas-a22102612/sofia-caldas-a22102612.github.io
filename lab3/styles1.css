@@ -1,65 +1,9 @@
+/* base */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-
-/*section sobre*/
-#sobre {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  gap: 32px;
-  background-color: #f4ede4;
-}
-
-#sobre h2 {
-  width: 100%;
-  color: #5a1426;
-}
-
-.card {
-  width: 300px;
-  padding: 32px 30px;
-  background-color: white;
-  border-left: 5px solid #5a1426;
-  border-radius: 4px 14px 14px 4px;
-}
-
-.numero {
-  font-family: "DM Serif Display", Georgia, serif;
-  font-size: 3.5em;
-  color: #d4a13a;
-}
-
-.card h3 {
-  font-size: 1.35em;
-  color: #5a1426;
-  margin: 10px 0 12px;
-}
-
-.card p {
-  line-height: 1.6;
-  margin-bottom: 24px;
-}
-
-.card a {
-  color: #5a1426;
-  font-weight: bold;
-  text-decoration: none;
-  border-bottom: 2px solid #d4a13a;
-  padding-bottom: 2px;
-}
-
-.card a:hover {
-  color: #2b0a14;
-}
-
-/* max image size */
-img {
-  max-width: 100%;
 }
 
 body {
@@ -67,8 +11,12 @@ body {
   color: #2b0a14;
   background-color: #f4ede4;
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto; /* header, main, footer */
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
 }
 
 h2 {
@@ -90,7 +38,12 @@ p {
   margin-bottom: 1em;
 }
 
-/* Header */
+main {
+  flex: 1; /* footer to bottom of page */
+  padding: 60px 8%;
+}
+
+/* header */
 
 header {
   display: flex;
@@ -98,14 +51,12 @@ header {
   background-color: #5a1426;
 }
 
-/* logo on the left of menu bar */
 header h1 {
   flex-shrink: 0;
   height: 50px;
   padding: 0 24px;
   display: flex;
   align-items: center;
-  background-color: #5a1426;
 }
 
 .header-logo {
@@ -113,7 +64,6 @@ header h1 {
   height: 42px;
 }
 
-/* arrow menu */
 header nav {
   flex: 1;
   display: flex;
@@ -121,7 +71,7 @@ header nav {
 
 header nav a {
   flex: 1;
-  height: 50px; /* same height as logo */
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,7 +104,13 @@ header nav a.ativo {
   font-weight: bold;
 }
 
-/* banner */
+/* icons for mobile */
+.icone {
+  display: none;
+  font-size: 1.3em;
+}
+
+/* banner for pages without hero */
 .banner {
   display: block;
   width: 100%;
@@ -162,42 +118,154 @@ header nav a.ativo {
   object-fit: cover;
 }
 
-/* main banner maior */
-.hero-grande .banner {
-  height: 70vh;
+/* Hero */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #f4ede4;
 }
 
-/* Content */
-
-main {
-  padding: 60px 8%;
+/* hero dark layer over picture */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgb(43, 10, 20), rgba(71, 16, 33, 0.944), rgba(125, 5, 41, 0.963));
 }
 
-iframe {
-  max-width: 100%;
-  margin: 10px 0 20px;
-  border-radius: 14px;
+/* menu and text */
+.hero header {
+  position: relative;
+  z-index: 1;
 }
 
-.mercado,
-.imgVinha {
-  width: 100%;
-  margin-top: 20px;
-  border-radius: 14px;
+.hero-texto {
+  position: absolute;
+  z-index: 1;
+  top: 32%;
+  left: 8%;
+  right: 8%;
+  max-width: 640px;
 }
 
-.cartaxoMapa {
-  width: 30%;
-  margin-top: 20px;
-  border-radius: 14px;
+.regiao {
+  color: #d4a13a;
+  margin-bottom: 14px;
 }
 
-/* links âncora da página Multimédia */
+.hero-texto h2 {
+  font-size: 4.2em;
+  line-height: 1.05;
+  color: #f4ede4;
+  margin-bottom: 22px;
+}
+
+.lema {
+  font-size: 1.3em;
+  line-height: 1.5;
+  max-width: 480px;
+}
+
+/* changes pic of page */
+.hero-inicio {
+  background-image: url("images/painelCartaxo.jpg");
+}
+
+.hero-multimedia {
+  background-image: url("images/cartaxoAzu.jpg");
+}
+
+/* whole screen sections */
+
+main.secoes {
+  padding: 0; /* screen wide */
+}
+
+.section {
+  min-height: 100vh;
+  padding: 80px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section h3 {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-weight: normal;
+  font-size: 2.4em;
+  margin: 0 0 30px;
+}
+
+.photos {
+  background-color: #f4ede4;
+}
+
+.video {
+  background-color: #2b0a14;
+}
+
+.poetry {
+  background-color: #5a1426;
+}
+
+/* lighter text */
+.video,
+.poetry,
+.video h3,
+.poetry h3 {
+  color: #f4ede4;
+}
+
+/* two elements side to side (text + map, text + image, ...) */
+.side-to-side {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* each child takes half the width */
+.side-to-side > * {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+}
+
+.side-to-side iframe {
+  height: 450px;
+}
+
+/* component stuff */
+
+/* main button */
+.cta {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 16px 38px;
+  background-color: #d4a13a;
+  color: #2b0a14;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+.cta:hover {
+  background-color: #e6b858;
+}
+
+/* links âncora (botões com contorno) */
 .ancoras {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .ancoras a {
@@ -214,7 +282,73 @@ iframe {
   color: #f4ede4;
 }
 
-/* Tabela */
+/* versão para fundos escuros */
+.hero .ancoras a,
+.video .ancoras a,
+.poetry .ancoras a {
+  border-color: #d4a13a;
+  color: #f4ede4;
+}
+
+.hero .ancoras a:hover,
+.video .ancoras a:hover,
+.poetry .ancoras a:hover {
+  background-color: #d4a13a;
+  color: #2b0a14;
+}
+
+/* cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.card {
+  width: 300px;
+  padding: 32px 30px;
+  background-color: white;
+  border-left: 5px solid #5a1426;
+  border-radius: 4px 14px 14px 4px;
+}
+
+.numero {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 3.5em;
+  color: #d4a13a;
+}
+
+.card h3 {
+  margin: 10px 0 12px;
+}
+
+.card a {
+  color: #5a1426;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #d4a13a;
+}
+
+/* white box for text */
+.text {
+  margin: 30px 0;
+  padding: 10px 30px 20px;
+  background-color: white;
+  border-left: 5px solid #5a1426;
+  border-radius: 4px 14px 14px 4px;
+}
+
+.curiosidades {
+  padding-left: 25px;
+}
+
+.curiosidades li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* tabela */
 .tabela {
   border-collapse: collapse;
   margin: 10px 0 20px;
@@ -239,26 +373,105 @@ iframe {
   font-size: 1.2em;
 }
 
-/* Curiosidades */
-.text {
-  margin: 30px 0;
-  padding: 10px 30px 20px;
+/* fotografias */
+.fotografias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 1040px;
+}
+
+.fotografias img {
+  box-sizing: content-box;
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+  padding: 4px;
   background-color: white;
-  border-left: 5px solid #5a1426;
-  border-radius: 4px 14px 14px 4px;
+  border: 1px solid #d9c7a3;
+  border-radius: 6px;
 }
 
-.curiosidades {
-  padding-left: 25px;
+/* vídeo */
+iframe {
+  width: 800px;
+  height: 450px;
+  max-width: 100%;
+  border: 0;
+  border-radius: 14px;
 }
 
-.curiosidades li {
-  margin-bottom: 8px;
-  line-height: 1.6;
+/* poema */
+.poema {
+  max-width: 600px;
+  padding: 30px 40px;
+  background-color: #f4ede4;
+  color: #2b0a14;
+  border-radius: 8px;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-style: italic;
+  font-size: 1.2em;
 }
 
-/* Página inicial: texto e imagem lado a lado */
+.poema p {
+  padding: 2px 0;
+  margin: 0;
+}
 
+.poema p:nth-child(odd) {
+  color: #5a1426;
+}
+
+.poema p:nth-child(even) {
+  padding-left: 30px;
+}
+
+.poema p:nth-child(4n) {
+  margin-bottom: 18px;
+}
+
+.poema p:first-child::first-letter {
+  font-size: 2em;
+}
+
+/* pixabay pic */
+.frase {
+  position: relative;
+}
+
+.frase img {
+  display: block;
+  width: 100%;
+}
+
+.frase-texto {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+  max-width: 60%;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 5vw;
+  line-height: 1.1;
+  color: #f4ede4;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* imagens de conteúdo */
+.mercado,
+.imgVinha {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 14px;
+}
+
+.cartaxoMapa {
+  width: 30%;
+  margin-top: 20px;
+  border-radius: 14px;
+}
+
+/* main page side by side */
 .intro {
   min-height: 100vh;
   display: grid;
@@ -283,7 +496,7 @@ iframe {
   margin: 0;
 }
 
-/* Footer */
+/* footer */
 
 footer {
   background-color: #2b0a14;
@@ -297,71 +510,50 @@ footer p {
   margin: 0;
 }
 
-/* hero */
-.hero {
-  position: relative;
-  height: 100vh;
-background-image:
-    linear-gradient(90deg, rgb(43, 10, 20), rgba(71, 16, 33, 0.944), rgba(125, 5, 41, 0.963)),
-    url("images/painelCartaxo.jpg");
-  background-size: cover;
-  background-position: center;
-  color: #f4ede4;
+/* grid */
+
+/* grid: reusable base */
+.grid {
+  display: grid;
+  gap: 24px;
 }
 
-/* texto posicionado sobre a imagem */
-.hero-texto {
-  position: absolute;
-  top: 32%;
-  left: 8%;
-  right: 8%;
-  max-width: 640px;
+.grid > * {
+  margin: 0;
 }
 
-/* pequeno */
-.regiao {
-  color: #d4a13a;
-  margin-bottom: 14px;
+.grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
 }
 
-/* grande */
-.hero-texto h2 {
-  font-size: 4.2em;
-  line-height: 1.05;
-  color: #f4ede4;
-  margin-bottom: 22px;
+/* info page */
+.grid-info {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(160px, auto);
+  grid-template-areas:
+    "titulo  titulo  titulo  ."
+    "intro    intro   .     ."
+    "acessos  acessos  .    ."
+    ".       .       .       ."
+    "curios  curios  .   foto1";
 }
 
-/* médio */
-.lema {
-  font-size: 1.3em;
-  line-height: 1.5;
-  max-width: 480px;
-}
+.g-titulo       { grid-area: titulo; align-self: end; }
+.g-intro        { grid-area: intro; }
+.g-acessos      { grid-area: acessos; overflow-x: auto; }
+.g-foto1        { grid-area: foto1; }
+.g-curiosidades { grid-area: curios; }
 
-/* call to action */
-.cta {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 16px 38px;
-  background-color: #d4a13a;
-  color: #2b0a14;
-  font-weight: bold;
-  font-size: 1.1em;
-  text-decoration: none;
-  border-radius: 40px;
-}
 
-.cta:hover {
-  background-color: #e6b858;
-}
-
-/* Mobile */
+/* phone */
 
 @media (max-width: 800px) {
   header h1 {
-    width: 100px;
     height: 36px;
+    padding: 0 14px;
   }
 
   .header-logo {
@@ -377,6 +569,7 @@ background-image:
     padding-left: 10px;
   }
 
+  /* icons instead of words */
   header nav a span {
     display: none;
   }
@@ -389,13 +582,21 @@ background-image:
     padding: 40px 6%;
   }
 
-  .cartaxoMapa {
+  .section {
+    padding: 60px 6%;
+  }
+
+  /* side to side becomes one on top of the other */
+  .side-to-side {
+    flex-direction: column;
+  }
+
+  .side-to-side > * {
     width: 100%;
   }
 
-  .intro {
-    grid-template-columns: 1fr;
-    padding: 70px 6%;
+  .side-to-side iframe {
+    height: 300px;
   }
 
   .hero-texto {
@@ -412,8 +613,43 @@ background-image:
     font-size: 1.1em;
   }
 
-  .icone {
-  display: block;
-  font-size: 1.3em;
-}
+  iframe {
+    height: 220px;
+  }
+
+  .poema {
+    padding: 20px 24px;
+  }
+
+  .frase-texto {
+    font-size: 7vw;
+    max-width: 80%;
+  }
+
+  .cartaxoMapa {
+    width: 100%;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    padding: 70px 6%;
+  }
+
+  /* grid mobile */
+  .grid-info {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "titulo"
+      "intro"
+      "acessos"
+      "foto2"
+      "curios"
+      "foto3"
+      "foto4";
+  }
+
+  .grid img {
+    height: 220px;
+  }
 }
