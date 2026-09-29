@@ -1,22 +1,22 @@
 * {
-    box-sizing: border-box;
-margin: 0;
-padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-background-color: rgba(252, 243, 225, 0.481);
-margin: 0 20;
-min-height: 100%;
-display: grid;
-grid-template-rows: auto auto 1fr auto;
+  background-color: rgba(252, 243, 225, 0.481);
+  margin: 0 20;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
 }
 
 header {
-/*background-image: url("images/background page.jpg");
+  /*background-image: url("images/background page.jpg");
 background-size: cover;
 background-position: center;*/
-   background: linear-gradient(rgba(81, 12, 28, 0.9), rgba(38, 7, 14, 0.89));
+  background: linear-gradient(rgba(81, 12, 28, 0.9), rgba(38, 7, 14, 0.89));
   padding: 12px 20px;
   text-align: left;
 }
@@ -28,168 +28,164 @@ background-position: center;*/
   object-fit: cover;
 }
 
-
 h1 {
-color: white;
-text-shadow:
--1px -1px 0 black,
-1px -1px 0 black,
--1px  1px 0 black,
-1px  1px 0 black;
-padding: 20px;
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+  padding: 20px;
 }
 
 nav {
-display: flex;
-gap: 10px;
-margin: 20px 0;
-text-align: center;
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  text-align: center;
 }
 
 nav a {
-    background: linear-gradient(rgba(81, 12, 28, 0.9), rgba(38, 7, 14, 0.89));
-padding: 20px 20px;
-/*background-color: #570202;*/
-color: white;
-text-decoration:solid;
-border-radius: 6px;
-box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.3),
-            inset -3px -3px 6px rgba(0, 0, 0, 0.7);
-            width: 100%;
-            font-size: 1.2em;
+  background: linear-gradient(rgba(81, 12, 28, 0.9), rgba(38, 7, 14, 0.89));
+  padding: 20px 20px;
+  /*background-color: #570202;*/
+  color: white;
+  text-decoration: solid;
+  border-radius: 6px;
+  box-shadow:
+    inset 3px 3px 6px rgba(0, 0, 0, 0.3),
+    inset -3px -3px 6px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  font-size: 1.2em;
 }
 
 nav a:hover {
-background-color: #0b3356;
+  background-color: #0b3356;
 }
 
 p {
-padding: 10px 20px;
-flex: 1;
+  padding: 10px 20px;
+  flex: 1;
 }
 
 h2 {
-color: #2f1a09;
-flex: 1;
-padding: 20px;
+  color: #2f1a09;
+  flex: 1;
+  padding: 20px;
 }
 
 .cartaxoMapa {
-width: 30%;
-height: auto;
-padding: 20px;
+  width: 30%;
+  height: auto;
+  padding: 20px;
 }
 
 .imgaju {
-width: 40%;
-height: auto;
-flex: 1;
-padding: 20px;
+  width: 40%;
+  height: auto;
+  flex: 1;
+  padding: 20px;
 }
 
 .mercado {
-width: 100%;
-height: auto;
-flex: 1;
-padding: 20px;
+  width: 100%;
+  height: auto;
+  flex: 1;
+  padding: 20px;
 }
 
 .imgVinha {
-width: 100%;
-height: auto;
-flex: 1;
-padding: 20px;
+  width: 100%;
+  height: auto;
+  flex: 1;
+  padding: 20px;
 }
 
 .container {
-min-height: 100vh;
-display: flex;
-flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-
-
 footer {
-background-image:
-url("images/background page.jpg");
-background-size: cover;
-background-position: center;
-padding: 5px 0;
-color: white;
-text-shadow:
--1px -1px 0 black,
-1px -1px 0 black,
--1px  1px 0 black,
-1px  1px 0 black;
+  background-image: url("images/background page.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5px 0;
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .fotografias {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    max-width: 1040px;
-    margin: 20px auto;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 1040px;
+  margin: 20px auto;
+}
 
-  .fotografias img {
+.fotografias img {
   width: 240px;
   height: 160px;
 }
 
-
-
 /* Tabela */
 .tabela {
-border-collapse: collapse;
-margin: 20px;
-background-color: white;
+  border-collapse: collapse;
+  margin: 20px;
+  background-color: white;
 }
 
 .tabela th,
 .tabela td {
-border: 1px solid #570202;
-padding: 10px 15px;
-text-align: left;
+  border: 1px solid #570202;
+  padding: 10px 15px;
+  text-align: left;
 }
 
 .tabela th {
-background-color: #570202;
-color: rgb(239, 239, 239);
+  background-color: #570202;
+  color: rgb(239, 239, 239);
 }
 
 .tabela td {
-color: #2f1a09;
+  color: #2f1a09;
 }
 
 /* Título da tabela (primeira linha) */
 .tabela tr:first-child th {
-background-color: #0b3356a8;
-text-align: center;
-font-size: 1.2em;
+  background-color: #0b3356a8;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 /* Curiosidades */
 .curiosidades {
-padding: 10px 20px 20px 50px;
+  padding: 10px 20px 20px 50px;
 }
 
 .curiosidades li {
-margin-bottom: 8px;
-color: #570202;
+  margin-bottom: 8px;
+  color: #570202;
 }
 
 h3 {
-padding: 10px 20px;
-color: #2f1a09;
+  padding: 10px 20px;
+  color: #2f1a09;
 }
 
 .text {
-padding: 10px 20px;
-color: #2f1a09;
-background-color: #f3e3cc96;
-border-radius: 8px;
-box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.3),
-            inset -3px -3px 6px rgba(255, 255, 255, 0.7);
+  padding: 10px 20px;
+  color: #2f1a09;
+  background-color: #f3e3cc96;
+  border-radius: 8px;
+  box-shadow:
+    inset 3px 3px 6px rgba(0, 0, 0, 0.3),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.7);
 }
 /* Tabela */

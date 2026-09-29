@@ -81,13 +81,26 @@ header nav a {
   text-decoration: none;
   padding: 0 26px 0 32px;
   margin-left: -12px;
-  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%, 14px 50%);
+  clip-path: polygon(
+    0 0,
+    calc(100% - 14px) 0,
+    100% 50%,
+    calc(100% - 14px) 100%,
+    0 100%,
+    14px 50%
+  );
 }
 
 header nav a:first-child {
   margin-left: 0;
   padding-left: 20px;
-  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%);
+  clip-path: polygon(
+    0 0,
+    calc(100% - 14px) 0,
+    100% 50%,
+    calc(100% - 14px) 100%,
+    0 100%
+  );
 }
 
 header nav a:last-child {
@@ -136,7 +149,12 @@ header nav a.ativo {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, rgb(43, 10, 20), rgba(71, 16, 33, 0.944), rgba(125, 5, 41, 0.963));
+  background: linear-gradient(
+    90deg,
+    rgb(43, 10, 20),
+    rgba(71, 16, 33, 0.944),
+    rgba(125, 5, 41, 0.963)
+  );
 }
 
 /* menu and text */
@@ -541,12 +559,23 @@ footer p {
     "curios  curios  .   foto1";
 }
 
-.g-titulo       { grid-area: titulo; align-self: end; }
-.g-intro        { grid-area: intro; }
-.g-acessos      { grid-area: acessos; overflow-x: auto; }
-.g-foto1        { grid-area: foto1; }
-.g-curiosidades { grid-area: curios; }
-
+.g-titulo {
+  grid-area: titulo;
+  align-self: end;
+}
+.g-intro {
+  grid-area: intro;
+}
+.g-acessos {
+  grid-area: acessos;
+  overflow-x: auto;
+}
+.g-foto1 {
+  grid-area: foto1;
+}
+.g-curiosidades {
+  grid-area: curios;
+}
 
 /*video*/
 
@@ -570,7 +599,6 @@ footer p {
   object-fit: cover;
 }
 
-
 .video-background-texto {
   position: relative;
   z-index: 1;
@@ -580,7 +608,6 @@ footer p {
   color: #f4ede4;
   text-align: center;
 }
-
 
 /* parallax */
 .parallax {
@@ -606,7 +633,6 @@ footer p {
 .parallax-vinha {
   background-image: url("images/cat-wine.jpg");
 }
-
 
 /* phone */
 
